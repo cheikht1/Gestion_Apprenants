@@ -1,0 +1,24 @@
+# Ignorer le dossier bootstrap et son contenu
+bootstrap/
+
+# Ignorer les fichiers générés par le système
+.DS_Store
+
+# Ignorer les fichiers spécifiques au projet
+Description_Demo.docx
+Description_Demo.pdf
+ajouter.png
+details.png
+liste.png
+nav.png
+avatar.png
+person.jpeg
+
+# Ignorer les fichiers de configuration et de logs
+*.log
+*.env
+*.pyc
+__pycache__/
+
+# Ignorer les fichiers de base de données locale
+db.json

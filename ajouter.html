@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <title>Ajouter un Apprenant</title>
+</head>
+<body class="bg-light d-flex align-items-center justify-content-center vh-100">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-5 col-md-7">
+                <div class="card shadow"> 
+                    <div class="card-body">
+                        <h1 class="card-title display-6 text-center mb-4">Ajouter un Apprenant</h1>
+                        <form id="ajoutForm">
+                            <div class="mb-3">
+                                <input type="text" id="prenom" name="prenom" class="form-control bg-light border-0 shadow-sm" placeholder="Prénom" required>
+                            </div>
+                            <div class="mb-3">
+                                <input type="text" id="nom" name="nom" class="form-control bg-light border-0 shadow-sm" placeholder="Nom" required>
+                            </div>
+                            <div class="mb-3">
+                                <select id="sexe" name="sexe" class="form-select bg-light border-0 shadow-sm" required>
+                                    <option value="">Sélectionner le sexe...</option>
+                                    <option value="masculin">Masculin</option>
+                                    <option value="feminin">Féminin</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <input type="text" id="pays" name="pays" class="form-control bg-light border-0 shadow-sm" placeholder="Pays d'origine" required>
+                            </div>
+                            <div class="mb-3">
+                                <select id="modules" name="modules" class="form-select bg-light border-0 shadow-sm" required>
+                                    <option value="cloud">Sélectionner les modules</option>
+                                    <option value="securite">Sécurité</option>
+                                    <option value="aws">AWS</option>
+                                    <option value="dev-web">Dev-Web</option>
+                                    <option value="base_de_donnees">Base de données</option>
+                                    <option value="devops">DevOps</option>
+                                    <option value="programmation">Programmation</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <textarea id="motivation" name="motivation" class="form-control bg-light border-0 shadow-sm" rows="3" placeholder="Motivation" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">Ajouter</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

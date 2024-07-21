@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <title>Liste des Apprenants</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+        .content {
+            flex: 1;
+        }
+        .footer {
+            background-color: rgba(0, 0, 0, 0.2);
+            text-align: center;
+            color: white;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">FormationTech</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="list.html">Apprenants</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="ajouter.html">Ajouter Apprenant</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="modules.html">Modules</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="content container mt-4">
+            <h1 class="mb-3">Liste des Apprenants</h1>
+            <table class="table table-hover">
+                <thead class="table-secondary">
+                    <tr>
+                        <th>Prénom</th>
+                        <th>Nom</th>
+                        <th>Action</th>
+                        <th>Detail/Supprimer</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Les lignes des apprenants seront ajoutées dynamiquement ici -->
+                </tbody>
+            </table>
+            <a href="ajouter.html" class="btn btn-primary">Ajouter un nouvel apprenant</a>
+        </div> 
+
+        <footer class="footer">
+            <div class="text-center p-3">
+                © 2024 FormationTech
+            </div>
+        </footer>
+    </div>
+
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
